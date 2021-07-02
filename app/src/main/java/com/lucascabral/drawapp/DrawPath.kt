@@ -17,7 +17,7 @@ class DrawPath @JvmOverloads constructor(
     private var path: Path = Path()
 
     init {
-        paint.color = Color.RED
+        paint.color = Color.GREEN
         paint.strokeWidth = 10f
         paint.style = Paint.Style.STROKE
         paint.isAntiAlias = true
