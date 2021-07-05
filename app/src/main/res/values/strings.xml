@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Draw App</string>
+    <string name="delete_drawing_title_menu">Delete Drawing</string>
+    <string name="alert_dialog_title_text">Delete Drawing!</string>
+    <string name="alert_dialog_message_text">Do you want to delete the drawing? 🤔</string>
+    <string name="alert_dialog_negative">No</string>
+    <string name="alert_dialog_positive">Yes</string>
 </resources>

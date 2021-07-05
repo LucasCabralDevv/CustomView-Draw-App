@@ -86,7 +86,7 @@ class DrawPath @JvmOverloads constructor(
         mPath!!.lineTo(mX!!, mY!!)
     }
 
-    fun setUndo() {
+    fun undoPath() {
         val size = pathList.size
         if (size > 0) {
             undonePathList.add(pathList[size - 1])
@@ -95,11 +95,19 @@ class DrawPath @JvmOverloads constructor(
         }
     }
 
-    fun setRedo() {
+    fun redoPath() {
         val size = undonePathList.size
         if (size > 0) {
             pathList.add(undonePathList[size - 1])
             undonePathList.removeAt(size - 1)
+            invalidate()
+        }
+    }
+
+    fun deleteDrawing() {
+        if (pathList.size > 0) {
+            pathList.clear()
+            undonePathList.clear()
             invalidate()
         }
     }
