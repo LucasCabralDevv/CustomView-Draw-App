@@ -23,7 +23,6 @@ class DrawPath @JvmOverloads constructor(
     private var touchTolerance: Float = 4f
 
     init {
-        paint = Paint()
         paint.color = Color.GREEN
         paint.strokeWidth = 10f
         paint.style = Paint.Style.STROKE
